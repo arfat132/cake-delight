@@ -1,7 +1,32 @@
 .header{
+    display: flex;
     background: #E57277;
     padding: 10px;
     font-size: 18px;
     color: white;
     line-height: 0;
+    justify-content: space-between;
+    padding-left: 140px;
+    padding-right: 140px;
+}
+.header .cart{
+    font-size: 35px;
+    border: none;
+    background: none;
+    color: white;
+    position: relative;
+    margin-top: 13px;
+    
+}
+.selected {
+    position: absolute;
+    color: white;
+    margin-left: 21px;
+    margin-top: -47px;
+    font-size: 13px;
+    font-weight: 700;
+    background: orange;
+    line-height: 0;
+    padding: 7px 7px 12px 7px;
+    border-radius: 50px;
 }

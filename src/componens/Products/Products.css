@@ -1,0 +1,15 @@
+.products{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+   justify-items: center;
+   background-color: rgb(255, 246, 247);
+    
+}
+@media screen and (max-width:570px) {
+    .products{
+        display: grid;
+        grid-template-columns:repeat(1, 1fr);
+       justify-items: center;
+        
+    }
+}
