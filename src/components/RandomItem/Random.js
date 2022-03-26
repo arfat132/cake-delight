@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Random = ({random }) => {
+const RandomItem = ({random }) => {
     const { name } =random;
     return (
         <div>
@@ -9,4 +9,4 @@ const Random = ({random }) => {
     );
 };
 
-export default Random;
+export default RandomItem;

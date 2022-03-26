@@ -5,7 +5,7 @@ import Modal from 'react-modal';
 import './Products.css';
 import Cart from '../Cart/Cart';
 import Buttons from '../Buttons/Buttons';
-import Random from '../Random/Random';
+import RandomItem from '../RandomItem/RandomItem';
 
 Modal.setAppElement('#root');
 
@@ -87,7 +87,7 @@ const Products = () => {
               ></Cart>
 
             ))}
-       <Random random={random}></Random>
+       <RandomItem random={random}></RandomItem>
       <Buttons randomItems={randomItems} handleRemove={handleRemove}></Buttons>
     </Modal>
    </div>

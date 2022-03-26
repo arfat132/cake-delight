@@ -1,6 +1,6 @@
-## Delight Cake
+# Delight Cake
 
-## This project live site [Cake Delight](https://github.com/facebook/create-react-app).
+## Live site link [Cake Delight](https://github.com/facebook/create-react-app).
 
 # Getting Started with Create React App
 
