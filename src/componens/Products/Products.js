@@ -5,15 +5,16 @@ import Modal from 'react-modal';
 import './Products.css';
 import Cart from '../Cart/Cart';
 import Buttons from '../Buttons/Buttons';
+import Random from '../Random/Random';
 
- Modal.setAppElement('#root');
+Modal.setAppElement('#root');
 
 const Products = () => {
-    const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
-  
+  const [random, setRandom] = useState([]);
 
-    const customStyles = {
+  const customStyles = {
         content: {
           top: '50%',
           left: '50%',
@@ -24,17 +25,19 @@ const Products = () => {
         },
     };
 
-    const handleClick = (product) => {
-      const newCart = [...cart, product];
+  const handleClick = (product) => {
+  const newCart = [...cart, product];
       setCart(newCart)
       
   }
   
   const randomItems = () => {
-    const randomItem = [Math.floor(Math.random() * (cart.length - 1))];
-    setCart([randomItem])
-    console.log(randomItem)
+  const randomCart = [Math.floor(Math.random() * (cart.length - 1))];
+    setRandom(cart[randomCart])
+    
+    
 }
+
   const handleRemove = () => {
     setCart([])
   }
@@ -57,15 +60,14 @@ const Products = () => {
     <div>
        <Header cart={cart} openModal={openModal}></Header>
        <div className='products'>
-     
-            {
-                products.map(product =>
-                    <Product
-                        key={product.id}
-                        product={product}
-                        handleClick={handleClick}
-                    ></Product>
-                    )
+         {
+           products.map(product =>
+              <Product
+                    key={product.id}
+                    product={product}
+                    handleClick={handleClick}
+              ></Product>
+              )
            }
       </div>
       <Modal
@@ -74,17 +76,18 @@ const Products = () => {
             style={customStyles}
             >
         <button onClick={closeModal}>close</button>
+        <h1>Selected Items</h1>
         {cart.length === 0 && (
-            <div className='cart-warning'>
-              <p> No Product Found </p>
-            </div>
-            )}
+            <p> No Product Found </p>
+        )}
+        
             {cart.map((selectedItems) => (
-             <Cart key={selectedItems.id}
+              <Cart key={selectedItems.id}
                 selectedItems={selectedItems}
-                 ></Cart>
+              ></Cart>
+
             ))}
-        <h1>{[cart.length].name}</h1>
+       <Random random={random}></Random>
       <Buttons randomItems={randomItems} handleRemove={handleRemove}></Buttons>
     </Modal>
    </div>

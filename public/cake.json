@@ -38,7 +38,7 @@
   },
   {
     "id": "5",
-    "name": "Chocolate Strawberry fudge cake",
+    "name": "Chocolate 3 floor cake",
      "price": 420,
     "ratings": "★★★★★",
     "ratingsCount": 2345,
@@ -85,7 +85,7 @@
   {
     "id": "10",
     "name": "Vanila Wedding Cake",
-        "price": 850,
+    "price": 850,
     "ratings": "★★★",
     "ratingsCount": 1345,
     "img": "./images/cake-10.jpg",
@@ -108,14 +108,6 @@
     "ratingsCount": 4231,
     "img": "./images/cake-12.jpg",
      "quantity": 0
-  },
-  {
-    "id": "13",
-    "name": "Chocolate 3 layer cake",
-     "price": 220,
-    "ratings": "★★★★",
-    "ratingsCount": 23512,
-    "img": "./images/cake-13.jpg",
-     "quantity": 0
   }
+
 ]

@@ -30,3 +30,10 @@
     padding: 7px 7px 12px 7px;
     border-radius: 50px;
 }
+@media screen and (max-width:570px) {
+    .header{
+    padding-left: 15px;
+    padding-right: 20px;
+        
+    }
+}
