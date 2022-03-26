@@ -7,6 +7,7 @@ import Cart from '../Cart/Cart';
 import Buttons from '../Buttons/Buttons';
 import RandomItem from '../RandomItem/RandomItem';
 
+
 Modal.setAppElement('#root');
 
 const Products = () => {
