@@ -1,6 +1,6 @@
 # Cake Delight
 
-## Live site link [Cake Delight](https://effulgent-croissant-46fc96.netlify.app/).
+## Live site link: [Cake Delight](https://effulgent-croissant-46fc96.netlify.app/).
 
 # Getting Started with Create React App
 
