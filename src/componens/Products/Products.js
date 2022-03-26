@@ -32,7 +32,7 @@ const Products = () => {
   
   const randomItems = () => {
     const randomItem = [Math.floor(Math.random() * (cart.length - 1))];
-    setCart(randomItem)
+    setCart([randomItem])
     console.log(randomItem)
 }
   const handleRemove = () => {
@@ -84,7 +84,7 @@ const Products = () => {
                 selectedItems={selectedItems}
                  ></Cart>
             ))}
-       
+        <h1>{[cart.length].name}</h1>
       <Buttons randomItems={randomItems} handleRemove={handleRemove}></Buttons>
     </Modal>
    </div>
