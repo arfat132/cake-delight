@@ -1,0 +1,16 @@
+.items{
+    display: flex;
+    padding: 10px 0px;
+    
+}
+.items-info{
+    font-size: 18px;
+    line-height: 18px;
+    font-size: 14px;
+}
+.items img{
+width: 120px;
+height: 120px;
+margin-right: 10px;
+}
+
